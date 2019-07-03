@@ -18,13 +18,13 @@ pipeline
                 java Read
             }
         }
-        stage('Package')
-        {
-            steps
+        //stage('Package')
+        //{
+            //steps
             {
-                jar cfve Read.jar Read Read.class
-                java -jar Read.jar
-            }
-        }
+                //jar cfve Read.jar Read Read.class
+                //java -jar Read.jar
+            //}
+        //}
     }
 }
