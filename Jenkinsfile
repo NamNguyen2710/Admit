@@ -7,23 +7,23 @@ pipeline
         {
             steps
             {
-                bat 'cd src/'
-                bat 'javac Read.java' 
+                bat "cd src/"
+                bat "javac Read.java" 
             }
         }
         stage('Run')
         {
             steps
             {
-                bat 'java Read'
+                bat "java Read"
             }
         }
         stage('Package')
         {
             steps
             {
-                bat 'jar cfve Read.jar Read Read.class'
-                bat 'java -jar Read.jar'
+                bat "jar cfve Read.jar Read Read.class"
+                bat "java -jar Read.jar"
             }
         }
     }
