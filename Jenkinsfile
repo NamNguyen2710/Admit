@@ -7,7 +7,7 @@ pipeline
         {
             steps
             {
-                dir src/
+                dir 'src/'
                 javac Read.java
             }
         }
