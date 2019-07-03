@@ -8,7 +8,7 @@ pipeline
             steps
             {
                 dir 'src/'
-                javac Read.java
+                bat 'javac Read.java'
             }
         }
         stage('Run')
