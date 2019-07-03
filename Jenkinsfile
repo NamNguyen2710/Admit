@@ -7,7 +7,7 @@ pipeline
         {
             steps
             {
-                cd src/
+                dir src/
                 javac Read.java
             }
         }
@@ -18,13 +18,5 @@ pipeline
                 java Read
             }
         }
-        //stage('Package')
-        //{
-            //steps
-            {
-                //jar cfve Read.jar Read Read.class
-                //java -jar Read.jar
-            //}
-        //}
     }
 }
